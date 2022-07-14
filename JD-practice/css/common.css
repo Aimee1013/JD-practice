@@ -1,0 +1,345 @@
+/* CSS公共样式 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+         url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+         url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.style-red {
+    color: #c81623;
+}
+
+/* 顶部快捷导航 */
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+.w .location {
+    float: left;
+}
+.location i {
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+.w .list {
+    float: right;
+}
+
+.list ul {
+    display: flex;
+}
+.list ul .spacer {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 10px 12px;
+}
+.list ul i {
+    font-family: 'icomoon';
+    line-height: 27px;
+}
+
+/* header部分 */
+header {
+    height: 141px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+header .w {
+    position: relative;
+    /* background-color: pink; */
+    /* overflow: hidden; */
+}
+header .logo {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.logo a {
+    display: block;
+    width: 190px;
+    height: 160px;
+    background: url(../img/logo.png) no-repeat;
+    font-size: 0;
+}
+.search {
+    position: absolute;
+    left: 260px;
+    top: 25px;
+}
+.search input {
+    float: left;
+    width: 520px;
+    height: 32px;
+    border: 2px solid #e2231a;
+    padding: 2px 15px;
+    color: gray;
+}
+.search button {
+    float: left;
+    width: 65px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e2231a;
+    border: none;
+}
+.search button:hover {
+    background-color: #c81623;
+}
+.search button i {
+    font-family: 'icomoon';
+    color: white;
+    font-size: 18px;
+}
+.search .photo {
+    font-family: 'icomoon';
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    font-size: 20px;
+}
+.search .photo:hover {
+    color: #e2231a;
+    cursor: pointer;
+}
+header .hotwords {
+    position: absolute;
+    top: 70px;
+    left: 260px;
+}
+header .hotwords ul {
+    display: flex;
+}
+header .hotwords ul li {
+    margin-right: 12px;
+    font-size: 14px;
+}
+header .hotwords ul li:hover {
+    cursor: pointer;
+    color: #e2231a;
+}
+header .shopcar {
+    position: absolute;
+    top: 25px;
+    right: 145px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #e2231a;
+    border: 1px solid #eee;
+}
+header .shopcar i {
+    font-family: 'icomoon';
+    padding-right: 15px;
+    font-size: 18px;
+}
+header .shopcar:hover {
+    border-color: #e2231a;
+}
+header .keywords {
+    position: absolute;
+    top: 110px;
+    left: 210px;
+}
+header .keywords ul li {
+    float: left;
+    font-size: 18px;
+    margin-right: 20px;
+}
+header .ad {
+    position: absolute;
+    top: 15px;
+    right: -80px;
+    
+}
+header .ad a {
+    display: block;
+    width: 190px;
+    height: 120px;
+    background-image: url(../img/ad.png);
+    background-size: contain;
+}
+
+
+/* footer部分 */
+footer {
+    height: 568px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    /* background-color: #f5f5f5; */
+}
+.mod_service {
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+    /* background-color: pink; */
+}
+.mod_service ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+} 
+
+.mod_service div {
+    height: 42px;
+    line-height: 42px;
+    font-size: 26px;   
+}
+.mod_service__icon {
+    float: left;
+    width: 36px;
+    height: 42px;
+    background: url(../img/icons.png) no-repeat;
+    margin: 0 10px 0 20px;
+}
+.mod_service_duo {
+    background-position: 0 -191px;
+}
+.mod_service_kuai {
+    background-position: -41px -191px;
+}
+.mod_service_hao {
+    background-position: -82px -191px;
+}
+.mod_service_sheng {
+    background-position: -123px -191px;
+}
+
+.mod_help {
+    height: 180px;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    border-bottom: 1px solid #ccc ;
+}
+.mod_help dt {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.mod_help dd {
+    margin-top: 5px;
+    font-size: 14px;
+}
+.mod_help_area dt {
+    text-align: center;
+}
+.mod_help_area dd {
+    text-align: right;
+    font-size: 14px;
+}
+.mod_help_area p {
+    font-size: 14px;
+}
+.mod_help_area i {
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+.mod_copyright {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.mod_help a:hover,
+.mod_copyright a:hover {
+    color: #c81623;
+}
+.mod_copyright_links span {
+    margin: 0 5px;
+}
+
+.mod_copyright_info {
+    margin-top: 10px;
+}
+.mod_copyright_info p {
+    margin-bottom: 5px;
+}
+.mod_copyright_info span {
+    margin: 0 8px;
+}
+.mod_copyright_inter i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/icons.png) no-repeat;
+    margin-right: 10px;
+}
+.mod_copyright_inter a:nth-child(1) i {
+    background-position: -107px -152px;
+}
+.mod_copyright_inter a:nth-child(3) i {
+    background-position: -125px -150px;;
+}
+.mod_copyright_inter a:nth-child(5) i {
+    background-position: -145px -150px;
+}
+.mod_copyright_inter a:nth-child(7) i {
+    background-position: -167px -151px;
+}
+.mod_copyright_inter a:nth-child(9) i {
+    background-position: -108px -168px;
+}
+
+.mod_copyright_auth a {
+    display: inline-block;
+    width: 120px;
+    height: 32px;
+    margin: 15px 10px 0 0;
+}
+.mod_copyright_auth a i {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icons.png) no-repeat;
+}
+.mod_copyright_auth a:nth-child(1) i {
+    background-position: -209px -109px;
+}
+.mod_copyright_auth a:nth-child(2) i {
+    background-position: -209px -75px;
+}
+.mod_copyright_auth a:nth-child(3) i {
+    background-position: -206px -41px;
+}
+.mod_copyright_auth a:nth-child(4) i {
+    background-position: -209px -109px;
+}
+.mod_copyright_auth a:nth-child(5) i {
+    background-position: -209px -109px;
+}
+.mod_copyright_auth a:nth-child(6) i {
+    background-position: -209px -109px;
+}
+.mod_copyright_auth a:nth-child(7) i {
+    background-position: -209px -109px;
+}
+.mod_copyright_auth a:nth-child(8) i {
+    background-position: -209px -109px;
+}
+
+
+
+
+
+
+
+
+
+
+
